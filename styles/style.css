@@ -13,7 +13,6 @@ main{
 }
 .container{
     background-color: #FFFFFF;
-    width: 870px;
     padding: 30px;
     border-radius: 5px;
     margin-top: 21px;
@@ -113,4 +112,35 @@ hr{
 }
 .fa-star.empty{
     color: #AEAEAE;
+}
+
+/*--------------------------
+         Media Queries 
+-----------------------------*/
+/* Mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* tablets */
+@media only screen and (min-width:689px) and (max-width:991px){
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptops and larger devices */
+@media only screen and(min-width: 992px) {
+    .container{
+        width: 870px;
+    }
 }
