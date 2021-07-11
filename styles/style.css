@@ -16,6 +16,7 @@ main{
     padding: 30px;
     border-radius: 5px;
     margin-top: 21px;
+    width: 870px;
 }
 hr{
     border: 1px solid #D1D1D1;
@@ -114,10 +115,11 @@ hr{
     color: #AEAEAE;
 }
 
-/*--------------------------
-         Media Queries 
------------------------------*/
-/* Mobile devices */
+/* ---------------------
+    Media Queries 
+-----------------------*/
+
+/* Mobile Devices */
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
@@ -127,20 +129,18 @@ hr{
     }
     .player, .blog{
         flex-direction: column;
-        align-items: center;
     }
 }
 
-/* tablets */
-@media only screen and (min-width:689px) and (max-width:991px){
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
     .players, .courses{
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-/* Laptops and larger devices */
-@media only screen and(min-width: 992px) {
-    .container{
-        width: 870px;
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
